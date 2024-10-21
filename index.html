@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product Preview Design</title>
+    <style>
+      #main-image {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border: 1px solid black;
+        border-radius: 20px;
+        display: block;
+        margin: 40px auto;
+      }
+
+      .product-image-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .product-image {
+        height: 70px;
+        width: 100px;
+        object-fit: cover;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./img/1.webp" alt="product-image" id="main-image" />
+
+    <div class="product-image-container">
+      <img
+        src="./img/1.webp"
+        alt="product-image"
+        class="product-image"
+        onclick="changeImg('./img/1.webp')"
+      />
+      <img
+        src="./img/2.webp"
+        alt="product-image"
+        class="product-image"
+        onclick="changeImg('./img/2.webp')"
+      />
+      <img
+        src="./img/3.webp"
+        alt="product-image"
+        class="product-image"
+        onclick="changeImg('./img/3.webp')"
+      />
+      <img
+        src="./img/4.webp"
+        alt="product-image"
+        class="product-image"
+        onclick="changeImg('./img/4.webp')"
+      />
+    </div>
+
+    
+  </body>
+</html>
